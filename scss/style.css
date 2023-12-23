@@ -34,38 +34,44 @@ h3 {
   color: hsl(300, 43%, 22%);
 }
 
-.container .content .introduction {
+.container {
+  height: 100%;
+}
+.container .content .flex-container {
+  margin-bottom: 2rem;
+}
+.container .content .flex-container .introduction {
   padding: 1rem;
 }
-.container .content .introduction__title {
+.container .content .flex-container .introduction__title {
   line-height: 1.8rem;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
 }
-.container .content .introduction .description {
+.container .content .flex-container .introduction .description {
   text-align: center;
   color: hsl(303, 10%, 53%);
   font-weight: 500;
   font-size: 0.938rem;
   margin-top: 1rem;
 }
-.container .content .ratings {
+.container .content .flex-container .ratings {
   text-align: center;
   margin-top: 2rem;
 }
-.container .content .ratings__bloc {
+.container .content .flex-container .ratings__bloc {
   margin-top: 1rem;
   border-radius: 0.3rem;
   padding: 1rem 0;
   background-color: hsl(300, 24%, 96%);
 }
-.container .content .ratings__bloc img {
+.container .content .flex-container .ratings__bloc img {
   margin-right: 0.188rem;
   width: 1rem;
   margin-bottom: 0.25rem;
 }
-.container .content .ratings__bloc h3 {
+.container .content .flex-container .ratings__bloc h3 {
   font-size: 1rem;
   font-weight: 700;
 }
@@ -73,6 +79,7 @@ h3 {
   background-color: hsl(300, 43%, 22%);
   padding: 1.875rem;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 .container .content .testimonials-container .testimonial-bloc .profile {
   display: flex;
@@ -99,47 +106,54 @@ h3 {
 }
 
 @media (min-width: 900px) {
-  .content .flex-container {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .container .content {
+    border: 1px solid black;
+  }
+  .container .content .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8rem;
   }
-  .content .flex-container .introduction {
+  .container .content .flex-container .introduction {
     max-width: 30%;
   }
-  .content .flex-container .introduction__title {
+  .container .content .flex-container .introduction__title {
     text-align: left;
   }
-  .content .flex-container .introduction .description {
+  .container .content .flex-container .introduction .description {
     text-align: left;
   }
-  .content .flex-container .ratings__bloc {
+  .container .content .flex-container .ratings__bloc {
     display: flex;
     width: 26rem;
     padding: 1rem 2rem;
   }
-  .content .flex-container .ratings__bloc h3 {
+  .container .content .flex-container .ratings__bloc h3 {
     margin-left: 2rem;
   }
-  .content .flex-container .ratings .bloc-1 {
+  .container .content .flex-container .ratings .bloc-1 {
     margin-left: -6rem;
   }
-  .content .flex-container .ratings .bloc-2 {
+  .container .content .flex-container .ratings .bloc-2 {
     margin-left: -4rem;
   }
-  .content .testimonials-container {
+  .container .content .testimonials-container {
     display: flex;
     justify-content: space-between;
   }
-  .content .testimonials-container .testimonial-bloc {
+  .container .content .testimonials-container .testimonial-bloc {
     max-width: 25rem;
   }
-  .content .testimonials-container .bloc-1 {
+  .container .content .testimonials-container .bloc-1 {
     margin-top: -4rem;
     margin-bottom: 4rem;
   }
-  .content .testimonials-container .bloc-2 {
+  .container .content .testimonials-container .bloc-2 {
     margin-top: -2rem;
     margin-bottom: 2rem;
   }

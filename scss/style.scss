@@ -41,39 +41,44 @@ h3 {
 }
 
 .container {
+  
+  height: 100%;
   .content {
-    .introduction {
-      padding: 1rem;
-      &__title {
-        line-height: 1.8rem;
-        text-align: center;
-        font-size: 2.25rem;
-        font-weight: 700;
-      }
-      .description {
-        text-align: center;
-        color: hsl(303, 10%, 53%);
-        font-weight: 500;
-        font-size: 0.938rem;
-        margin-top: 1rem;
-      }
-    }
-    .ratings {
-      text-align: center;
-      margin-top: 2rem;
-      &__bloc {
-        margin-top: 1rem;
-        border-radius: 0.3rem;
-        padding: 1rem 0;
-        background-color: hsl(300, 24%, 96%);
-        img {
-          margin-right: 0.188rem;
-          width: 1rem;
-          margin-bottom: 0.25rem;
-        }
-        h3 {
-          font-size: 1rem;
+    .flex-container{
+      margin-bottom: 2rem;
+      .introduction {
+        padding: 1rem;
+        &__title {
+          line-height: 1.8rem;
+          text-align: center;
+          font-size: 2.25rem;
           font-weight: 700;
+        }
+        .description {
+          text-align: center;
+          color: hsl(303, 10%, 53%);
+          font-weight: 500;
+          font-size: 0.938rem;
+          margin-top: 1rem;
+        }
+      }
+      .ratings {
+        text-align: center;
+        margin-top: 2rem;
+        &__bloc {
+          margin-top: 1rem;
+          border-radius: 0.3rem;
+          padding: 1rem 0;
+          background-color: hsl(300, 24%, 96%);
+          img {
+            margin-right: 0.188rem;
+            width: 1rem;
+            margin-bottom: 0.25rem;
+          }
+          h3 {
+            font-size: 1rem;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -83,6 +88,7 @@ h3 {
         background-color: hsl(300, 43%, 22%);
         padding: 1.875rem;
         border-radius: 0.5rem;
+        margin-bottom: 1rem;
 
         .profile {
           display: flex;
@@ -115,56 +121,61 @@ h3 {
 }
 
 @media (min-width: 900px) {
-  .content {
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8rem;
-      .introduction {
-        max-width: 30%;
+  .container{
+    display: flex;
+    align-items: center;
+    .content {
+      border: 1px solid black;
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
-        &__title {
-          text-align: left;
-          
-        }
-        .description {
-          text-align: left;
-        }
-      }
-
-      .ratings {
-        &__bloc {
-          display: flex;
-          width: 26rem;
-          padding: 1rem 2rem;
-
-          h3 {
-            margin-left: 2rem;
+        margin-bottom: 8rem;
+        .introduction {
+          max-width: 30%;
+  
+          &__title {
+            text-align: left;
+          }
+          .description {
+            text-align: left;
           }
         }
+  
+        .ratings {
+          &__bloc {
+            display: flex;
+            width: 26rem;
+            padding: 1rem 2rem;
+  
+            h3 {
+              margin-left: 2rem;
+            }
+          }
+          .bloc-1 {
+            margin-left: -6rem;
+          }
+          .bloc-2 {
+            margin-left: -4rem;
+          }
+        }
+      }
+      .testimonials-container {
+        display: flex;
+        justify-content: space-between;
+        .testimonial-bloc {
+          max-width: 25rem;
+        }
         .bloc-1 {
-          margin-left: -6rem;
+          margin-top: -4rem;
+          margin-bottom: 4rem;
         }
         .bloc-2 {
-          margin-left: -4rem;
+          margin-top: -2rem;
+          margin-bottom: 2rem;
         }
-      }
-    }
-    .testimonials-container {
-      display: flex;
-      justify-content: space-between;
-      .testimonial-bloc {
-        max-width: 25rem;
-      }
-      .bloc-1 {
-        margin-top: -4rem;
-        margin-bottom: 4rem;
-      }
-      .bloc-2 {
-        margin-top: -2rem;
-        margin-bottom: 2rem;
       }
     }
   }
-}
+  }
