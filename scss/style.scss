@@ -27,10 +27,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -40,8 +42,6 @@ h3 {
 
 .container {
   .content {
-    max-width: 375px;
-    padding: 1rem;
     .introduction {
       padding: 1rem;
       &__title {
@@ -83,7 +83,7 @@ h3 {
         background-color: hsl(300, 43%, 22%);
         padding: 1.875rem;
         border-radius: 0.5rem;
-        margin-top: 1.25rem;
+
         .profile {
           display: flex;
           align-items: center;
@@ -107,7 +107,63 @@ h3 {
         }
         .testimonial {
           color: hsl(300, 24%, 96%);
+          line-height: 1.625rem;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .content {
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8rem;
+      .introduction {
+        max-width: 30%;
+        
+        &__title {
+          text-align: left;
+          
+        }
+        .description {
+          text-align: left;
+        }
+      }
+
+      .ratings {
+        &__bloc {
+          display: flex;
+          width: 26rem;
+          padding: 1rem 2rem;
+
+          h3 {
+            margin-left: 2rem;
+          }
+        }
+        .bloc-1 {
+          margin-left: -6rem;
+        }
+        .bloc-2 {
+          margin-left: -4rem;
+        }
+      }
+    }
+    .testimonials-container {
+      display: flex;
+      justify-content: space-between;
+      .testimonial-bloc {
+        max-width: 25rem;
+      }
+      .bloc-1 {
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+      }
+      .bloc-2 {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
       }
     }
   }

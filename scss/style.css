@@ -21,10 +21,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -32,10 +34,6 @@ h3 {
   color: hsl(300, 43%, 22%);
 }
 
-.container .content {
-  max-width: 375px;
-  padding: 1rem;
-}
 .container .content .introduction {
   padding: 1rem;
 }
@@ -75,7 +73,6 @@ h3 {
   background-color: hsl(300, 43%, 22%);
   padding: 1.875rem;
   border-radius: 0.5rem;
-  margin-top: 1.25rem;
 }
 .container .content .testimonials-container .testimonial-bloc .profile {
   display: flex;
@@ -98,4 +95,52 @@ h3 {
 }
 .container .content .testimonials-container .testimonial-bloc .testimonial {
   color: hsl(300, 24%, 96%);
+  line-height: 1.625rem;
+}
+
+@media (min-width: 900px) {
+  .content .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  .content .flex-container .introduction {
+    max-width: 30%;
+  }
+  .content .flex-container .introduction__title {
+    text-align: left;
+  }
+  .content .flex-container .introduction .description {
+    text-align: left;
+  }
+  .content .flex-container .ratings__bloc {
+    display: flex;
+    width: 26rem;
+    padding: 1rem 2rem;
+  }
+  .content .flex-container .ratings__bloc h3 {
+    margin-left: 2rem;
+  }
+  .content .flex-container .ratings .bloc-1 {
+    margin-left: -6rem;
+  }
+  .content .flex-container .ratings .bloc-2 {
+    margin-left: -4rem;
+  }
+  .content .testimonials-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .testimonials-container .testimonial-bloc {
+    max-width: 25rem;
+  }
+  .content .testimonials-container .bloc-1 {
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+  }
+  .content .testimonials-container .bloc-2 {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
