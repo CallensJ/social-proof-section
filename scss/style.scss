@@ -8,7 +8,7 @@ $Very-Dark-Magenta: hsl(300, 43%, 22%);
 html {
   box-sizing: border-box;
   font-size: 100%;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 *,
@@ -29,54 +29,84 @@ body {
   align-items: center;
 }
 
-.container{
-    max-width: 1440px;
-   
+.container {
+  max-width: 1440px;
 }
 
-h1,h3{
-    color: $Very-Dark-Magenta,
+h1,
+h3 {
+  color: $Very-Dark-Magenta;
 }
 
-.container{
-  .content{
-   max-width: 375px;
-   padding: 1rem;
-    .introduction{
+.container {
+  .content {
+    max-width: 375px;
+    padding: 1rem;
+    .introduction {
       padding: 1rem;
-      &__title{
+      &__title {
         line-height: 1.8rem;
         text-align: center;
-        font-size:2.25rem;
+        font-size: 2.25rem;
         font-weight: 700;
       }
-      .description{
+      .description {
         text-align: center;
         color: hsl(303, 10%, 53%);
         font-weight: 500;
         font-size: 0.938rem;
         margin-top: 1rem;
       }
-  
     }
-    .ratings{
-     
+    .ratings {
       text-align: center;
       margin-top: 2rem;
-      &__bloc{
-  
+      &__bloc {
         margin-top: 1rem;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
         padding: 1rem 0;
         background-color: hsl(300, 24%, 96%);
-        img{
+        img {
           margin-right: 0.188rem;
           width: 1rem;
           margin-bottom: 0.25rem;
         }
-        h3{
+        h3 {
           font-size: 1rem;
           font-weight: 700;
+        }
+      }
+    }
+
+    .testimonials-container {
+      .testimonial-bloc {
+        background-color: hsl(300, 43%, 22%);
+        padding: 1.875rem;
+        border-radius: 0.5rem;
+        margin-top: 1.25rem;
+        .profile {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.25rem;
+          .profile-username {
+            h2 {
+              color: hsl(0, 0%, 100%);
+              font-weight: 500;
+              font-size: 1rem;
+            }
+            .occupation {
+              color: hsl(333, 80%, 67%);
+            }
+          }
+          .avatar {
+            border-radius: 50%;
+            margin-right: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+        .testimonial {
+          color: hsl(300, 24%, 96%);
         }
       }
     }

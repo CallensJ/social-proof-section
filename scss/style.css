@@ -27,7 +27,8 @@ body {
   max-width: 1440px;
 }
 
-h1, h3 {
+h1,
+h3 {
   color: hsl(300, 43%, 22%);
 }
 
@@ -69,4 +70,32 @@ h1, h3 {
 .container .content .ratings__bloc h3 {
   font-size: 1rem;
   font-weight: 700;
+}
+.container .content .testimonials-container .testimonial-bloc {
+  background-color: hsl(300, 43%, 22%);
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+}
+.container .content .testimonials-container .testimonial-bloc .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.container .content .testimonials-container .testimonial-bloc .profile .profile-username h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.container .content .testimonials-container .testimonial-bloc .profile .profile-username .occupation {
+  color: hsl(333, 80%, 67%);
+}
+.container .content .testimonials-container .testimonial-bloc .profile .avatar {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.container .content .testimonials-container .testimonial-bloc .testimonial {
+  color: hsl(300, 24%, 96%);
 }/*# sourceMappingURL=style.css.map */
